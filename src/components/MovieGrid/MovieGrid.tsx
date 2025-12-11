@@ -1,6 +1,6 @@
 import type { Movie } from "../../types/movie";
 import css from "./MovieGrid.module.css";
-import PlaceholderPoster from "../../assets/placeholerPoster.png";
+import PlaceholderPoster from "../../assets/placeholderPoster.png";
 interface MovieGridProps {
   movies: Movie[];
   onSelect: (movie: Movie) => void;
