@@ -1,6 +1,6 @@
 import type { Movie } from "../../types/movie";
 import css from "./MovieGrid.module.css";
-import PlaceholderPoster from "../../assets/placeholderPoster.png";
+import placeholderPoster from "../../assets/placeholderPoster.png";
 interface MovieGridProps {
   movies: Movie[];
   onSelect: (movie: Movie) => void;
@@ -18,7 +18,7 @@ export default function MovieGrid({ movies, onSelect }: MovieGridProps) {
               src={
                 movie.poster_path
                   ? `https://image.tmdb.org/t/p/w500/${movie.poster_path}`
-                  : PlaceholderPoster
+                  : placeholderPoster
               }
               alt={movie.title}
               loading="lazy"
